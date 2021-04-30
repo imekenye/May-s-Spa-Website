@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "gatsby-contentful-boiler",
@@ -10,6 +14,7 @@ module.exports = {
         spaceId: "",
       },
     },
+    "gatsby-plugin-playground",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
