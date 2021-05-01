@@ -1,0 +1,27 @@
+{
+  "services": {
+    "smallTitle": "our services",
+    "bigTitle": "we help you grow your body",
+    "text": "Services ranging from Elderly Home care Nurses, and Medical Devices. Available throughout International"
+  },
+  "aboutUs": {
+    "smallTitle": "about us",
+    "bigTitle": "About May's Esthetics and Hannah Clinic",
+    "text": "May's is a gorgeous 2,000 square-foot facility serving clients in Western New York. We have seven private treatment rooms and a hand-picked staff of experts ready to provide you with excellent service. Our technicians utilize proven techniques, use quality products and provide solutions for most skin conditions."
+  },
+  "benefits": {
+    "smallTitle": "the benefits",
+    "bigTitle": "Beauty is about being happy with your skin",
+    "text": "May's is a gorgeous 2,000 square-foot facility serving clients in Western New York. We have seven private treatment rooms and a hand-picked staff of experts ready to provide you with excellent service. Our technicians utilize proven techniques, use quality products and provide solutions for most skin conditions."
+  },
+  "bestSeller": {
+    "smallTitle": "best seller",
+    "bigTitle": "your featured beauty treatments",
+    "text": "Services ranging from Elderly Home care Nurses, and Medical Devices. Available throughout International"
+  },
+  "testimony": {
+    "smallTitle": "happy people",
+    "bigTitle": "what our happy clients say",
+    "text": "These are things that clients who have used our features say."
+  }
+}
