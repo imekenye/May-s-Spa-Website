@@ -1,7 +1,7 @@
 import React from "react";
 import { NavContainer } from "./Nav.styled";
-import SearchIcon from "../SearchIcon";
-import CartIcon from "../CartIcon";
+import SearchIcon from "../../../components/SvgIcons/SearchIcon";
+import CartIcon from "../../../components/SvgIcons/CartIcon";
 
 export default function Nav() {
   return (

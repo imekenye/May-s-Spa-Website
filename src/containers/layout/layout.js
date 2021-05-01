@@ -4,13 +4,12 @@ import { normalize } from "styled-normalize";
 
 import "@fontsource/playfair-display/400.css";
 import "@fontsource/ubuntu/400.css";
-import { theme } from "../theme/theme";
+import { theme } from "../../theme/theme";
+import Nav from "./Nav";
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
   body{
-    max-width: 1140px;
-    margin: 0 auto;
     font-family: 'Ubuntu', sans-serif;
   }
   *{
@@ -34,6 +33,7 @@ export default function Layout({ children }) {
     <React.Fragment>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <Nav />
         {children}
       </ThemeProvider>
     </React.Fragment>

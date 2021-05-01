@@ -2,16 +2,12 @@ import styled from "styled-components";
 import "@fontsource/playfair-display/700.css";
 
 export const NavContainer = styled.nav`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 28px 150px;
   background: #ededed;
-  border-bottom: 1px solid ${({ theme: { colors } }) => colors.TextColorDark};
+  border-bottom: 1px solid ${({ theme: { colors } }) => colors.LightMedium};
   h1 {
     text-transform: uppercase;
     font-family: "Playfair Display", serif;
