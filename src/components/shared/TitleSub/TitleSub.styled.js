@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "@fontsource/ubuntu/300.css";
 
 export const TitleSubContainer = styled.div`
   text-align: ${(props) => props.align};
@@ -8,6 +9,7 @@ export const TitleSubContainer = styled.div`
 `;
 export const TitleSmall = styled.h6`
   font-size: 16px;
+  font-weight: 300;
   line-height: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;

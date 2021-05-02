@@ -4,6 +4,7 @@ import Header from "../containers/home-hero/Header";
 import Services from "../containers/services";
 import AboutUs from "../containers/about-us";
 import Benefits from "../containers/benefits";
+import Treatments from "../containers/treatments";
 
 // markup
 const IndexPage = () => {
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <Services />
       <AboutUs />
       <Benefits />
+      <Treatments />
     </Layout>
   );
 };
