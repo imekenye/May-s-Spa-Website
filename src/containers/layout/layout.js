@@ -6,6 +6,7 @@ import "@fontsource/playfair-display/400.css";
 import "@fontsource/ubuntu/400.css";
 import { theme } from "../../theme/theme";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -35,6 +36,7 @@ export default function Layout({ children }) {
         <GlobalStyle />
         <Nav />
         {children}
+        <Footer />
       </ThemeProvider>
     </React.Fragment>
   );
