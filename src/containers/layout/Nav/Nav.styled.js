@@ -8,6 +8,7 @@ export const NavContainer = styled.nav`
   padding: 28px 150px;
   background: #ededed;
   border-bottom: 1px solid ${({ theme: { colors } }) => colors.LightMedium};
+  overflow: hidden;
   h1 {
     text-transform: uppercase;
     font-family: "Playfair Display", serif;

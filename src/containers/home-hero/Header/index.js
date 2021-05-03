@@ -7,15 +7,28 @@ import {
   ButtonOutlined,
 } from "../../../components/shared/button/button.stc";
 
+import { motion } from "framer-motion";
+import { heroVariants, imgVariants, openVariants } from "./Header.motion";
+
 const Header = () => {
   return (
     <HeaderContainer>
       <div className="eclipse" />
       <div className="hero">
-        <div className="hero__image">
+        <motion.div
+          className="hero__image"
+          variants={imgVariants}
+          initial={`hidden`}
+          animate={`visible`}
+        >
           <img src={WomanfaceImg} alt="" />
-        </div>
-        <div className="hero__text">
+        </motion.div>
+        <motion.div
+          className="hero__text"
+          variants={heroVariants}
+          initial={`hidden`}
+          animate={`visible`}
+        >
           <p className="hero__top">spa & beauty center</p>
           <h1>Glow Your Face And Vitality With us</h1>
           <p className={`hero__paragraph`}>
@@ -35,11 +48,16 @@ const Header = () => {
             <Button bgSecondary>Get Started</Button>
             <ButtonOutlined>Book now</ButtonOutlined>
           </div>
-        </div>
-        <div className="hero__open">
+        </motion.div>
+        <motion.div
+          className="hero__open"
+          variants={openVariants}
+          initial={`hidden`}
+          animate={`visible`}
+        >
           <h4>Open Hours:</h4>
           <p>09 am - 6 pm</p>
-        </div>
+        </motion.div>
       </div>
     </HeaderContainer>
   );

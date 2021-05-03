@@ -3,10 +3,13 @@ import { NavContainer } from "./Nav.styled";
 import SearchIcon from "../../../components/SvgIcons/SearchIcon";
 import CartIcon from "../../../components/SvgIcons/CartIcon";
 
+import { motion } from "framer-motion";
+import { navVariants } from "./Nav.motion";
+
 export default function Nav() {
   return (
     <NavContainer>
-      <ul>
+      <motion.ul variants={navVariants} initial={`hidden`} animate={`visible`}>
         <li>
           <a href="/about">About</a>
         </li>
@@ -16,13 +19,25 @@ export default function Nav() {
         <li>
           <a href="/service">Service</a>
         </li>
-      </ul>
-      <h1 className="brand__logo">May's spa & beauty</h1>
-      <div className="nav__right">
+      </motion.ul>
+      <motion.h1
+        className="brand__logo"
+        variants={navVariants}
+        initial={`hidden`}
+        animate={`visible`}
+      >
+        May's spa & beauty
+      </motion.h1>
+      <motion.div
+        className="nav__right"
+        variants={navVariants}
+        initial={`hidden`}
+        animate={`visible`}
+      >
         <p>(62) 123 - 342</p>
         <SearchIcon />
         <CartIcon />
-      </div>
+      </motion.div>
     </NavContainer>
   );
 }
